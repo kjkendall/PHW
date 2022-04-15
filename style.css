@@ -1,0 +1,255 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+  
+  body{
+    background: white;
+  }
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  
+  /* BUTTONS */
+  .btn{
+    text-transform: uppercase;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #fff;
+    background: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  .btn:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .btn-secondary{
+    border: 1px solid #7393B3;
+    background: transparent;
+    padding: .9rem 2.4rem;
+    border-radius: 0;
+    font-weight: bolder;
+  }
+  .btn-secondary:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #7393B3;
+  }
+  
+  /* HEADER */
+  .header{
+    background-color: #7393B3;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar li a{
+    margin-right: .5rem;
+    color: #fff;
+    font-size: calc(.5rem + .5vw);
+    text-transform: uppercase;
+  }
+  
+  .header .logo{
+    font-size: calc(1rem + 1vw);
+  }
+  
+  /* HERO */
+  .hero{
+    background-color:#7393B3;
+    padding: 10rem 10rem;
+    color: #fff;
+    text-align: center;
+  }
+  .hero-title{
+    font-size: calc(1.9rem + 2vw);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+  .hero-subtitle{
+    font-size: calc(.8rem + .8vw);
+    padding-bottom: 2rem;
+  }
+  
+  .hero span{
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+  
+  
+  /* WHY SECTION */
+  .why{
+    background-color: #fff;
+    text-align: center;
+    padding: 5rem;
+  }
+  .why-content {
+    max-width: 700px;
+    margin: auto;
+  }
+  .section-title{
+    font-size: calc(1rem + 1.5vw);
+    text-transform: uppercase;
+    padding-bottom: 1.8rem;
+  }
+  .why-content p{
+    font-size: calc(.7rem + .6vw);
+  }
+  
+  /* GYM CARDS SECTION */
+  .gym-cards{
+    padding: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5rem;
+    background-color: rgb(215, 221, 226);
+  }
+  .card {
+    text-align: center;
+  }
+  .card .image {
+    width: 25rem;
+    height: 15rem;
+    background-color: #7393B3 ;
+    margin: auto;
+  }
+  .card .card-title {
+    padding: 1.5rem 0;
+    font-size: calc(.7rem + .7vw);
+    text-transform:uppercase;
+  }
+  .card p{
+    font-size: calc(.6rem + .6vw);
+    padding-bottom: 1.3rem;
+  }
+  
+  /* VOLUNTEER SECTION */
+  .volunteer{
+    padding: 10rem 18rem;
+  }
+  .volunteer p{
+    font-size: calc(.6rem + .7vw);
+    padding-bottom: 1.5rem;
+  }
+  
+  /* FOOTER SECTION */
+  .footer{
+    background-color: #152238;
+    color: #fff;
+    padding: 2rem;
+  }
+  .footer-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 60rem; */
+  }
+  .footer-left span i {
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .footer-left .sitemap p {
+    text-transform: uppercase;
+    color: grey;
+    font-size: calc(.4rem + .4vw)
+  }
+  .sitemap .footer-nav ul{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .8rem;
+  }
+  .sitemap .footer-nav ul a{
+    font-size: calc(.6rem + .5vw);
+    margin-right: .7rem;
+    color: #fff;
+  }
+  
+  .footer-upper .footer-right{
+    max-width: 20rem;
+  }
+  
+  .footer-right .footer-title {
+    text-transform: uppercase;
+    font-size: calc(.6rem + .5vw);
+    padding-bottom: 1rem;
+  }
+  .footer-right .address{
+    font-size: calc(.6rem + .5vw);
+  }
+  .footer-right .mail {
+    font-size: calc(.6rem + .5vw);
+  }
+  
+  .footer-bottom{
+    border-top: 1px solid gray;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-bottom p{
+    font-size: calc(.6rem + .5vw);
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  @media(max-width :960px){
+    .gym-cards{
+        flex-direction: column;
+    }
+    .volunteer{
+        padding: 10rem;
+    }
+  }
+  @media(max-width :786px){
+    .hero {
+        padding: 2rem;
+    }
+    .hero-title{
+        font-size: calc(1.2rem + 2vw);
+    }
+    .footer-upper{
+        flex-direction: column;
+    }
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+  
+    .footer-upper .footer-right{
+        align-self: flex-start;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .footer-bottom .logo{
+        align-self: flex-start;
+        padding-top: 1rem;
+    }
+  }
+  
